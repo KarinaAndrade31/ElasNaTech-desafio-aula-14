@@ -1,0 +1,159 @@
+html{
+    font-family: sans-serif;
+}
+
+.header{
+    text-align: center;
+    margin: auto;
+    background-color: #000000;
+}
+
+.header_logo{
+    width: 10em;
+    height: auto;
+}
+
+#hamburguer{
+    background-color: #4c8aff;
+    color: #000000;
+    display: block;
+    text-align: center;
+    padding: 0.3em;
+    cursor: pointer;
+    font-size: 2em;
+}
+
+.header_nav{
+    background-color: #000000;
+    display: none;
+}
+
+.header_nav.show {
+    display: block;
+}
+
+ul{
+    margin: 0;
+}
+
+.header_nav ul{
+    list-style-type: none;
+    padding: 0;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-size: .8em;
+}
+
+.header_nav a{
+    color: #487ee2;
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+}
+
+.header_nav a:hover{
+    background-color: color-mix(in srgb, #4c8aff, #ffffff 50%);
+    color: #000000;
+}
+
+
+@media screen and (min-width: 48em){/*768px maior que*/
+
+
+    #hamburguer{
+        display: none;
+    }
+
+
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #000000;
+    }
+
+    .header_logo{
+        margin-left: 2em;
+    }
+
+    .header_nav{
+        display: block;
+    }
+
+    .header_nav ul{
+        margin-right: 2em;
+        font-size: .9em;
+    }
+
+    .header_nav li{
+        display: inline-block;
+    }
+
+    .header_nav a{
+        border-radius: 5px;
+    }
+
+    .header_nav a:hover{
+        background-color: #4c8aff;
+        color: #ffffff;
+    }
+}
+
+.fundo{
+    background-image: url(imagem/fundo.jpeg);
+    background-size: cover;
+    background-position: left center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.galeria a{
+    text-decoration: none;
+    color: #4c8aff;
+    display: inline-block;
+    background-color: #000000;
+    padding: 1em 1.8em;
+    font-size: 1.5em;
+    border-radius: 5px;
+}
+
+.galeria a:hover{
+    background-color: #ffffff;
+    color: #000000;
+}
+
+footer{
+    background-color: #000000;
+    text-align: center;
+    padding: 1em;
+}
+
+.icone_footer{
+    display: flex;
+    flex-direction: column;
+    gap: 1em
+}
+
+.icone{
+    width: 2.5em;
+}
+
+.texto_footer{
+    font-size: 0.7em;
+    letter-spacing: 0.15em;
+    margin:0;
+    padding-top: .8rem;
+    color: #4c8aff;
+}
+
+@media screen and (min-width: 48em){/*768px maior que */
+
+    .icone_footer{
+        flex-direction: row;
+        justify-content: center;
+        gap:1.5em;
+    }
+}
